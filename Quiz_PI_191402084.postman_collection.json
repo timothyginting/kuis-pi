@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "eaba95a4-5b8c-4f4f-aa5e-e4b3568c2fec",
+		"name": "Quiz_PI_191402084",
+		"description": "191402084_QuizPI dibangun untuk mengintegrasikan data data sepeda motor di Indonesia. API ini berguna untuk menampilkan data data sepeda motor. sebagaimana pengguna atau penjual melakukan pencarian data data sepeda motor. fitur di dalam API ini berfungsi juga untuk menambahkan, memupdate, menghapus data data motor di Indonesia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20090039"
+	},
+	"item": [
+		{
+			"name": ".../motor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/191402084_Quiz_PI/motor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"191402084_Quiz_PI",
+						"motor"
+					]
+				},
+				"description": "GET motor berfungsi untuk menampilan semua data data motor yang ada dalam database."
+			},
+			"response": []
+		},
+		{
+			"name": ".../motor/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/191402084_Quiz_PI/motor/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"191402084_Quiz_PI",
+						"motor",
+						"2"
+					]
+				},
+				"description": "GET motor/2 berfungsi untuk menampilkan data berdasarkan id data tersebut, sehingga menampilkan hanya 1 data saja."
+			},
+			"response": []
+		},
+		{
+			"name": ".../motor/{id}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "merek_motor",
+							"value": "Honda",
+							"type": "text"
+						},
+						{
+							"key": "varian_sepeda_motor",
+							"value": "Supra",
+							"type": "text"
+						},
+						{
+							"key": "tipe_transmisi",
+							"value": "manual",
+							"type": "text"
+						},
+						{
+							"key": "harga_motor",
+							"value": "90000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/191402084_Quiz_PI/motor/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"191402084_Quiz_PI",
+						"motor",
+						"2"
+					]
+				},
+				"description": "POST .../motor berfungsi untuk mengupdate data berdasasrkan id yang telah ditentukan"
+			},
+			"response": []
+		},
+		{
+			"name": ".../motor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "merek_motor",
+							"value": "Kawasaki",
+							"type": "text"
+						},
+						{
+							"key": "varian_sepeda_motor",
+							"value": "W175",
+							"type": "text"
+						},
+						{
+							"key": "tipe_transmisi",
+							"value": "Manual Kopling",
+							"type": "text"
+						},
+						{
+							"key": "harga_motor",
+							"value": "100000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/191402084_Quiz_PI/motor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"191402084_Quiz_PI",
+						"motor"
+					]
+				},
+				"description": "GET .../motor berfungsi untuk menambahkan data baru kedalam database."
+			},
+			"response": []
+		},
+		{
+			"name": ".../motor/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/191402084_Quiz_PI/motor/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"191402084_Quiz_PI",
+						"motor",
+						"2"
+					]
+				},
+				"description": "DELETE .../motor berfungsi untuk menghapus data dari database apabila data ingin dihapus"
+			},
+			"response": []
+		}
+	]
+}
